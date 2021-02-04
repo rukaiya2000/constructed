@@ -156,3 +156,56 @@ $(window).scroll(function() {
         $('nav').removeClass('navback');
     }
 });
+
+//read more button
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+	$('.grid').imagesLoaded(function(){
+		$('.grid').isotope({
+		  itemSelector: '.grid-item',
+		  layoutMode: 'fitRows'
+		});
+	});
+	$('.btn.all').click(function(){
+		$('.grid').isotope({
+			filter: '*'
+		})			
+	});
+	$('.btn.field').click(function(){
+		$('.grid').isotope({
+			filter: '.field'
+		})
+	});
+	$('.btn.geo').click(function(){
+		$('.grid').isotope({
+			filter: '.geo'
+		})
+	});
+	$('.btn.bridge').click(function(){
+		$('.grid').isotope({
+			filter: '.bridge'
+		})
+    });
+    $('.btn.lab').click(function(){
+		$('.grid').isotope({
+			filter: '.lab'
+		})
+	});
+	$('.btn').click(function(){
+		$('.btn').removeClass('on');
+		$(this).toggleClass('on');
+	});

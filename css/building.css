@@ -98,7 +98,7 @@ body.building_version .first-section h2 {
     letter-spacing: 2px;
     padding-bottom: 10px;
 }
-#about.section.wb {
+#about.section.wb ,#ourteam.section.wb  {
     background: url('../uploads/building/construction01.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,6 +135,7 @@ h2 {
 .read-more:hover {
     background: #111;
     color: #e8a900;
+    cursor: pointer;
 }
 .row.text-center.about-row {
     margin-top: 60px;
