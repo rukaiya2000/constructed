@@ -157,7 +157,7 @@ $(window).scroll(function() {
     }
 });
 
-//read more button
+//read more button about
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -173,7 +173,22 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
-
+//read more button service
+function myFun() {
+    var dot = document.getElementById("dot");
+    var moresText = document.getElementById("mores");
+    var buttonText = document.getElementById("myButton");
+  
+    if (dot.style.display === "none") {
+      dot.style.display = "inline";
+      buttonText.innerHTML = "Read more";
+      moresText.style.display = "none";
+    } else {
+      dot.style.display = "none";
+      buttonText.innerHTML = "Read less";
+      moresText.style.display = "inline";
+    }
+  }
 	$('.grid').imagesLoaded(function(){
 		$('.grid').isotope({
 		  itemSelector: '.grid-item',
@@ -209,3 +224,30 @@ function myFunction() {
 		$('.btn').removeClass('on');
 		$(this).toggleClass('on');
 	});
+
+
+
+    $("#form").validate({
+        rules: {
+          email: { required: true, email: true },
+          first_name: { required: true },
+          last_name: { required: true },
+          custom_title: { required: true },
+          custom_company: { required: true },
+          custom_phone_novalid: { required: true },
+          custom_state: { required: true },
+          custom_natureofyourinquiry: { required: true },
+          custom_country: { required: true },
+          'custom_consent[]': { required: true }
+        },
+        messages: {
+            email: "Enter Your Email Address",
+            first_name: "Come on, you don't even know your own first name",
+            last_name: "Come on, you don't even know your own last name",
+            custom_title: "What is your title",
+            custom_company: "Don't make me ask again",
+            custom_phone_novalid: "Can I get your number",
+            custom_country: "What country do you live in"
+        }        
+      });
+

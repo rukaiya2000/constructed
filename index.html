@@ -12,7 +12,7 @@
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- Site Icons -->
-   <link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+   <link rel="shortcut icon" href="images/logo-icon.png" type="image/x-icon" />
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- Site CSS -->
@@ -29,7 +29,7 @@
    <body class="building_version" data-spy="scroll" data-target=".header">
       <!-- LOADER -->
       <div id="preloader">
-         <img class="preloader" src="images/loaders/loader-building2.gif" alt="">
+         <img class="preloader" src="images/preloader.gif" alt="">
       </div>
       <!-- end loader -->
       <!-- END LOADER -->
@@ -50,8 +50,6 @@
                               <a class="socials-item" href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
                               <a class="socials-item" href="#" target="_blank" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
                               <a class="socials-item" href="#" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                              <a class="socials-item" href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a> 
-                              <a class="socials-item" href="#" target="_blank" title="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                            </div>
                         </div>
                      </div>
@@ -70,24 +68,25 @@
                </div>
                <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
-                     <li class="active"><a data-scroll href="#home">Home</a></li>
                      <li><a data-scroll href="#about">About Us </a></li>
                      <li><a data-scroll href="#services">Services</a></li>
                      <li><a data-scroll href="#projects">Our Work</a></li>
                      <li><a data-scroll href="#testimonials">Testimonials</a></li>
-                     <li><a data-scroll href="#price">Price</a></li>
                      <li><a data-scroll href="#contact">Contact Us</a></li>
+                     <li><a data-scroll href="careers.html">Careers</a></li>
+
                   </ul>
                </div>
             </div>
          </nav>
       </header>
-      <div class="video-container">
+   <div class="video-container" id="home">
            <video autoplay muted loop class="video" id="vid">
             <source src="video/Basic Cr Maintenance.mp4" type="video/mp4">
          </video>
+         
       </div>
-       
+        
 
    
       <!-- <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('uploads/building/slide-img1.png');">
@@ -180,65 +179,7 @@
          <div class="sep1"></div>
       </div>
       <!-- end section -->
-
-      
-      <div id="services" class="parallax section db parallax-off no-padding-bottom"  >
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-                  <div class="message-box">
-                     <h2>Services</h2>
-                     <h5>WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
-                  </div>
-                  <!-- end messagebox -->
-               </div>
-               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <div class="message-box">
-                     <p class="lead">Our consultancy firm has been setup with a few energetic civil and environmental engineers, architects, scientists, town planners and retired horticulturists following under the guidance of experienced retired engineers.<span id="dots">...</span><span id="more"> <br>
-                         <span class="aboutheading">WHERE WE STAND…</span><br> 
-                        <br> <span class="aboutheading">OUR APPROACH….</span><br>
-                    
-                     </span></p>
-                     <a  onclick="myFunction()" id="myBtn"  class="read-more">Read More</a>
-                  </div>
-                  <!-- end messagebox -->
-               </div>
-            </div>
-         </div>
-   <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="row">
-               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 serv" style="background-color:#222;">
-                  <div class="serv-blog">
-                     <img src="images/sr1.png" alt="#" />
-                  </div>
-                  <div class="serv-blog-cont">
-                     <h3>Manufacturing</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#181818;">
-                  <div class="serv-blog">
-                     <img src="images/sr2.png" alt="#" />
-                  </div>
-                  <div class="serv-blog-cont">
-                     <h3>Fabrication</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#222;">
-                  <div class="serv-blog">
-                     <img src="images/sr3.png" alt="#" />
-                  </div>
-                  <div class="serv-blog-cont">
-                     <h3>Construction</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                  </div>
-               </div>
-            </div>
-         </div>-->
-      </div> 
-      <!-- end section -->
-      <div id="ourteam" class="section wb">
+      <div id="price" class="section wb">
          <div class="container">
             <div class="section-title row text-center">
                <div class="col-md-8 col-md-offset-2">
@@ -417,6 +358,64 @@
          </div>
          <!-- end container -->
       </div>
+      
+      <div id="services" class="parallax section parallax-off no-padding-bottom"  >
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <h2>Services</h2>
+                     <h5>WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <p class="lead">Our consultancy firm has been setup with a few energetic civil and environmental engineers, architects, scientists, town planners and retired horticulturists following under the guidance of experienced retired engineers.<span id="dot">...</span><span id="mores"> <br>
+                         <span class="aboutheading">WHERE WE STAND…</span><br> 
+                        <br> <span class="aboutheading">OUR APPROACH….</span><br>
+                    
+                     </span></p>
+                     <a  onclick="myFun()" id="myButton"  class="read-more">Read More</a>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+            </div>
+         </div>
+   <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 serv" style="background-color:#222;">
+                  <div class="serv-blog">
+                     <img src="images/sr1.png" alt="#" />
+                  </div>
+                  <div class="serv-blog-cont">
+                     <h3>Manufacturing</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#181818;">
+                  <div class="serv-blog">
+                     <img src="images/sr2.png" alt="#" />
+                  </div>
+                  <div class="serv-blog-cont">
+                     <h3>Fabrication</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#222;">
+                  <div class="serv-blog">
+                     <img src="images/sr3.png" alt="#" />
+                  </div>
+                  <div class="serv-blog-cont">
+                     <h3>Construction</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                  </div>
+               </div>
+            </div>
+         </div>-->
+      </div> 
+      <!-- end section -->
+     
     
 
       <div id="projects" class="section">
@@ -603,129 +602,163 @@
                 
                       
                       <ul class="grid">
-                         <li class="grid-item element-item field">
-                             <a href="#large_img">
-                                <img src="fieldsurvey/fs1.jpg" width="100%" alt="field"></a>
+                         <li class="grid-item element-item field ">
+                            <div class="galzoom">
+                                <img src="fieldsurvey/fs1.jpg" class="galimage" width="100%" alt="field">
+                            </div>
+                               
                          </li>
+
                          <li class="grid-item element-item field">
-                             <a href="#large_img">
-                                <img src="fieldsurvey/fs3.png" width="100%" alt="field"></a>
+                           <div class="galzoom">
+                                <img src="fieldsurvey/fs3.png" class="galimage" width="100%" alt="field"> 
+                           </div>
                          </li> 
+
                          <li class="grid-item element-item field">
-                             <a href="#large_img">
-                                <img src="fieldsurvey/fs4.jpg" width="100%" alt="field"></a>
+                           <div class="galzoom">
+                                <img src="fieldsurvey/fs4.jpg" class="galimage" width="100%" alt="field">
+                                </div>
                          </li>
+
                          <li class="grid-item element-item field">
-                              <a href="#large_img">
-                                <img src="fieldsurvey/fs5.jpg" width="100%" alt="field"></a>
+                           <div class="galzoom">
+                               <img src="fieldsurvey/fs5.jpg" class="galimage" width="100%" alt="field">
+                           </div>
                          </li>
 
                          <li class="grid-item element-item geo">
-                              <a href="#large_img">
-                                <img src="geoinves/gi1.png" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+
+                                <img src="geoinves/gi1.png" class="galimage" width="100%" alt="geo">
+                           </div>
                          </li> 
                          <li class="grid-item element-item geo">
-                              <a href="#large_img">
-                                <img src="geoinves/gi2.png" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+                                <img src="geoinves/gi2.png" class="galimage" width="100%" alt="geo">
+                           </div>
                          </li>	
                          <li class="grid-item element-item geo">
-                             <a href="#large_img">
-                                <img src="geoinves/gi3.png" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+                                <img src="geoinves/gi3.png" class="galimage" width="100%" alt="geo">
+                           </div>
                          </li>
                          <li class="grid-item element-item geo">
-                              <a href="#large_img">
-                                <img src="geoinves/gi4.png" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+                                <img src="geoinves/gi4.png" class="galimage" width="100%" alt="geo">
+                           </div>
                          </li>
                          <li class="grid-item element-item geo">
-                              <a href="#large_img">
-                                <img src="geoinves/gi7.jpg" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+                                <img src="geoinves/gi7.jpg" class="galimage" width="100%" alt="geo">
+                           </div>
                          </li> 
                          <li class="grid-item element-item geo">
-                           <a href="#large_img">
-                              <img src="geoinves/gi8.jpg" width="100%" alt="geo"></a>
+                           <div class="galzoom">
+                              <img src="geoinves/gi8.jpg" class="galimage" width="100%" alt="geo">
+                           </div>
                        </li>
 
 
                        <li class="grid-item element-item bridge">
-                           <a href="#large_img">
-                              <img src="bridge/br1.png" width="100%" alt="bridge"></a>
+                        <div class="galzoom">
+                              <img src="bridge/br1.png" class="galimage" width="100%" alt="bridge">
+                        </div>
                        </li> 
                       
                        <li class="grid-item element-item bridge">
-                            <a href="#large_img">
-                              <img src="bridge/br2.png" width="100%" alt="bridge"></a>
+                        <div class="galzoom">
+                              <img src="bridge/br2.png" class="galimage" width="100%" alt="bridge">
+                        </div>
                        </li>
                        <li class="grid-item element-item bridge">
-                            <a href="#large_img">
-                              <img src="bridge/br3.png" width="100%" alt="bridge"></a>
+                        <div class="galzoom">
+                              <img src="bridge/br3.png" class="galimage" width="100%" alt="bridge">
+                        </div>
                        </li> 
                        <li class="grid-item element-item bridge">
-                            <a href="#large_img">
-                              <img src="bridge/br4.jpg" width="100%" alt="bridge"></a>
+                        <div class="galzoom">
+                              <img src="bridge/br4.jpg" class="galimage" width="100%" alt="bridge">
+                        </div>
                        </li>	
                        <li class="grid-item element-item bridge">
-                           <a href="#large_img">
-                              <img src="bridge/br5.jpg" width="100%" alt="bridge"></a>
+                        <div class="galzoom">
+                              <img src="bridge/br5.jpg" class="galimage" width="100%" alt="bridge">
+                        </div>
                        </li>
 
 
                        <li class="grid-item element-item lab">
-                            <a href="#large_img">
-                              <img src="labapparatus/aa1.jpg" width="100%" alt="lab"></a>
+                        <div class="galzoom">
+                              <img src="labapparatus/aa1.jpg" class="galimage" width="100%" alt="lab">
+                        </div>
                        </li>
                        <li class="grid-item element-item bridge">
-                            <a href="#large_img">
-                              <img src="labapparatus/aa2.jpg" width="100%" alt="lab"></a>
+                        <div class="galzoom">
+                              <img src="labapparatus/aa2.jpg" class="galimage" width="100%" alt="lab">
+                        </div>
                        </li> 		
                        <li class="grid-item element-item lab">
-                        <a href="#large_img">
-                          <img src="labapparatus/aa3.jpg" width="100%" alt="lab"></a>
+                        <div class="galzoom">
+                          <img src="labapparatus/aa3.jpg" class="galimage" width="100%" alt="lab">
+                        </div>
                    </li>
                    <li class="grid-item element-item lab">
-                        <a href="#large_img">
-                          <img src="labapparatus/aa4.jpg" width="100%" alt="lab"></a>
+                     <div class="galzoom">
+                          <img src="labapparatus/aa4.jpg" class="galimage" width="100%" alt="lab">
+                     </div>
                    </li> 
                    <li class="grid-item element-item lab">
-                     <a href="#large_img">
-                       <img src="labapparatus/aa5.jpg" width="100%" alt="lab"></a>
+                     <div class="galzoom">
+                       <img src="labapparatus/aa5.jpg" class="galimage" width="100%" alt="lab">
+                     </div>
                 </li>
                 <li class="grid-item element-item lab">
-                     <a href="#large_img">
-                       <img src="labapparatus/aa6.jpg" width="100%" alt="lab"></a>
+                  <div class="galzoom">
+                       <img src="labapparatus/aa6.jpg" class="galimage" width="100%" alt="lab">
+                  </div>
                 </li> 
                 <li class="grid-item element-item lab">
-                  <a href="#large_img">
-                    <img src="labapparatus/la10.png" width="100%" alt="lab"></a>
+                  <div class="galzoom">
+                    <img src="labapparatus/la10.png" class="galimage" width="100%" alt="lab">
+                  </div>
              </li>
             
             	     <li class="grid-item element-item lab">
-            <a href="#large_img">
-              <img src="labapparatus/la10.png" width="100%" alt="lab"></a>
+                     <div class="galzoom">
+              <img src="labapparatus/la10.png" class="galimage" width="100%" alt="lab">
+                     </div>
        </li>
        <li class="grid-item element-item lab">
-            <a href="#large_img">
-              <img src="labapparatus/la11.png" width="100%" alt="lab"></a>
+         <div class="galzoom">
+              <img src="labapparatus/la11.png" class="galimage" width="100%" alt="lab">
+              </div>
        </li> 
        <li class="grid-item element-item lab">
-         <a href="#large_img">
-           <img src="labapparatus/la12.png" width="100%" alt="lab"></a>
+         <div class="galzoom">
+           <img src="labapparatus/la12.png" class="galimage" width="100%" alt="lab">
+         </div>
     </li>
         
       <li class="grid-item element-item lab">
-      <a href="#large_img">
-        <img src="labapparatus/la13.png" width="100%" alt="lab"></a>
+         <div class="galzoom">
+        <img src="labapparatus/la13.png" class="galimage" width="100%" alt="lab">
+         </div>
  </li>
  <li class="grid-item element-item lab">
-      <a href="#large_img">
-        <img src="labapparatus/la14.png" width="100%" alt="lab"></a>
+   <div class="galzoom">
+        <img src="labapparatus/la14.png" class="galimage" width="100%" alt="lab">
+   </div>
  </li> 
  <li class="grid-item element-item lab">
-   <a href="#large_img">
-     <img src="labapparatus/la15.png" width="100%" alt="lab"></a>
+   <div class="galzoom">
+     <img src="labapparatus/la15.png" class="galimage" width="100%" alt="lab">
+   </div>
 </li>
 <li class="grid-item element-item lab">
-   <a href="#large_img">
-     <img src="labapparatus/la17.png" width="100%" alt="lab"></a>
+   <div class="galzoom">
+     <img src="labapparatus/la17.png" class="galimage" width="100%" alt="lab">
+   </div>
 </li> 			
                       </ul>
                    </div>
@@ -831,7 +864,7 @@
          <!-- end container -->
       </div>
       <!-- end section -->
-      <div id="price" class="section pr">
+      <!-- <div id="price" class="section pr">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -898,11 +931,11 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
+                        </div>-->
                         <!-- end row -->
-                     </div>
+                     <!-- </div> -->
                      <!-- end pane -->
-                     <div class="tab-pane fade" id="tab2">
+                     <!-- <div class="tab-pane fade" id="tab2">
                         <div class="row text-center">
                            <div class="col-md-6">
                               <div class="pricing-table">
@@ -945,27 +978,168 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                         <!-- end row -->
-                     </div>
+                     <!-- </div> -->
                      <!-- end pane -->
-                  </div>
+                  <!-- </div> -->
                   <!-- end content -->
-               </div>
+               <!-- </div> -->
                <!-- end col -->
+            <!-- </div>
+         </div>
+      </div> --> 
+
+      <div id="clients" class="section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <h2>Our Esteemed Clients</h2>
+                     <h5>Contrary to popular belief, Lorem Ipsum is not simply random text.</h5>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
             </div>
+            <div class="row text-center">
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
+               <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                  <a href="" class="client">
+                      <img src="images/logo-icon.png" class="clientrotate">
+                  </a>
+               </div>
          </div>
       </div>
-      <div id="contact" class="section wb">
-         <div class="container">
-            <div class="section-title row text-center">
-               <div class="col-md-8 col-md-offset-2">
-                  <h3>Contact Us</h3>
-                  <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-               </div>
-               <!-- end col -->
+      </div>
+ <section class="member_counter padding_bottom ml-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_counter_icon">
+                        <img src="images/rating.png" alt="">
+                    </div>
+                    <div class="single_member_counter">
+                        <span class="counter">60</span><span>+</span>
+                        <h4> <span>Satisfied</span> Client</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_counter_icon">
+                        <img src="images/company.png" alt="">
+                    </div>
+                    <div class="single_member_counter">
+                        <span class="counter">10</span>
+                        <h4> <span>Worldwide</span> Branches</h4>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_counter_icon">
+                        <img src="images/clipboard.png" alt="">
+                    </div>
+                    <div class="single_member_counter">
+                        <span class="counter">24</span>
+                        <h4> <span>Work</span> Finished</h4>
+                    </div>
+                </div>
             </div>
-            <!-- end title -->
+        </div>
+    </section>
+      <div id="contact" class="section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <h2>Contact Us</h2>
+                     <h5>Contrary to popular belief, Lorem Ipsum is not simply random text.</h5>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+            </div>
             <div class="row">
                <div class="col-lg-4 col-md-4">
                   <div class="contant-info">
@@ -1002,7 +1176,7 @@
                </div>
                <div class="col-md-8">
                   <div class="contact_form">
-                     <div id="message"></div>
+                     <div id="message"><h3 class="aboutheading mb-3"> Book and appointment</h3></div>
                      <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
                         <fieldset class="row-fluid">
                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -1016,6 +1190,18 @@
                            </div>
                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                               <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Website">
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                              <input type="date" name="date" id="date" class="form-control" placeholder="enter the date">
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                              <label class="sr-only">Select preferred time</label>
+                              <select name="select_date" id="select_date" class="selectpicker form-control" data-style="btn-white">
+                                 <option value="10">Select Preferred time</option>
+                                 <option value="1pm-2pm">1pm-2pm</option>
+                                 <option value="3pm-4pm">3pm-4pm</option>
+                                 <option value="5pm-6pm">5pm-6pm</option>
+                              </select>
                            </div>
                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <label class="sr-only">Select Department</label>

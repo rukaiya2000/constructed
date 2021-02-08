@@ -1,32 +1,4 @@
-/*------------------------------------------------------------------
-    File Name: style.css
--------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-    [Table of contents]
-
-    1. IMPORT FONTS
-    2. IMPORT FILES
-    3. SKELETON
-    4. WP CORE
-    5. HEADER
-    6. SECTIONS
-    7. SECTIONS
-    8. PORTFOLIO
-    9. TESTIMONIALS
-    10. PRICING TABLES
-    11. ICON BOXES
-    12. MESSAGE BOXES
-    13. FEATURES
-    14. CONTACT
-    15. FOOTER
-    16. MISC
-    17. BUTTONS
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-    IMPORT FONTS
--------------------------------------------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i);
@@ -43,9 +15,6 @@
 @import url(css/owl.carousel.css);
 @import url(css/font-awesome.min.css);
 
-/*------------------------------------------------------------------
-    SKELETON
--------------------------------------------------------------------*/
 
 body {
     color: #999;
@@ -441,7 +410,10 @@ li.social-links a {
     background-color: #f2f3f5;
 }
 .section.db {
-    background-color: #1f1f1f;
+    background-color: #000000;
+    background-image: linear-gradient(45deg, #000000 0%, #161616 29%, #2d2d2d 55%, #4e4e4e 84%, #525252 100%);
+    
+
 }
 .section.color1 {
     background-color: #448AFF;
@@ -1984,6 +1956,8 @@ body.app_version .app_iphone_01 img {
     width: 100%;
     height: 100vh; 
     overflow: hidden;
+    clip-path: polygon(0 0,100% 0,100% 90%,50% 100%,0 90%);
+    color:var(--mainWhite);
   }
   .video {
     /* Make video to at least 100% wide and tall */
@@ -2000,12 +1974,12 @@ body.app_version .app_iphone_01 img {
     left: 50%;
     transform: translate(-50%,-50%); */
   }
-  #more {display: none;}
+  #more , #mores {display: none;}
+  
 
   .aboutheading{
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: -15px;
     margin-top: 15px;
 }
 .aboutheading::after {
@@ -2185,17 +2159,11 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 270px;
 }
-
-/* .backside .card a {
-    font-size: 18px;
-    color: #007b5e !important;
-} */
-
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    color: #e8a900 !important;
 }
 
 .frontside .card .card-body img {
@@ -2205,4 +2173,97 @@ section .section-title {
     border-radius: 50%;
 }
 .card-body p{
-justify-content: center;}
+text-align: center!important;}
+.galimage{
+    transition: transform 1s;
+}
+
+.galimage:hover{
+    -ms-transform: scale(1.3); 
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3); 
+     
+         }
+.galzoom{
+           overflow: hidden;
+    }
+    .clientrotate{
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: 1500ms;}
+      
+        .client:hover .clientrotate{
+          transform: rotate(360deg);
+        }
+        .ban1{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+        }
+        label.error { color: red; font-style: italic; font-size: 12px; display: block; }
+
+.member_counter .single_counter_icon img {
+  width: 60px;
+}
+.member_counter .single_member_counter {
+  margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .member_counter .single_member_counter {
+    margin: 10px 0 20px;
+    display: inline-block;
+  }
+}
+.member_counter .single_member_counter span {
+  font-size: 60px;
+  font-weight: 700;
+  color: #e8a900 !important;
+  font-style: "Roboto", sans-serif;
+  display: inline-block;
+  float: left;
+  line-height: 57px;
+}
+
+@media (max-width: 991px) {
+  .member_counter .single_member_counter span {
+    line-height: 67px;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .member_counter .single_member_counter span {
+    line-height: 67px;
+    font-size: 40px;
+  }
+}
+.member_counter .single_member_counter h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  display: grid;
+  float: left;
+}
+@media (max-width: 991px) {
+  .member_counter .single_member_counter h4 {
+    font-size: 25px;
+  }
+}
+.member_counter .single_member_counter h4 span {
+  font-size: 16px;
+  color: #83868c;
+  display: block;
+  line-height: 20px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
