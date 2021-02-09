@@ -254,7 +254,7 @@ h2 {
 }
 body.building_version .section-title h3 {
     font-weight: bold;
-    color: #1f1f1f;
+    color: #e8a900;
     text-transform: uppercase;
 }
 #services .section-title p {
@@ -803,7 +803,7 @@ div#services .serv .service-inform-text p {
     outline: none;
 }
 .gal-item a:after {
-    content: "\e003";
+    content: "\e015";
     font-family: 'Glyphicons Halflings';
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.75);
@@ -901,8 +901,12 @@ div#services .serv .service-inform-text p {
     color: #fff;
 }
 #price.section {
-    background: url('../images/testimo.jpg');
-    background-size: cover;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('../images/testimo.jpg');
+        background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }

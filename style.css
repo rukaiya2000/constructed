@@ -920,9 +920,10 @@ li.social-links a {
 }
 .message-box .lead {
     padding-top: 10px;
-    font-size: 19px;
+    font-size: 15px;
     font-style: italic;
-    color: #999;
+    font-weight: 300;
+    color: rgb(91, 91, 91);
     padding-bottom: 0;
 }
 .post-media {
@@ -2267,3 +2268,5 @@ text-align: center!important;}
   text-transform: capitalize;
   margin-bottom: 4px;
 }
+.email a,.phone a{
+    color: #b7b7b7;
