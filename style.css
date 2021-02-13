@@ -135,6 +135,9 @@ blockquote {
   margin: 20px 0 20px;
   padding: 30px;
 }
+.margin {
+  margin-left: 200px;
+}
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
@@ -358,6 +361,7 @@ li.social-links a {
   right: 2px;
   top: 13px;
 }
+
 /*------------------------------------------------------------------
     SECTIONS
 -------------------------------------------------------------------*/
@@ -1529,6 +1533,7 @@ select.mobile-device {
 #contact {
   background: url(images/bg.png) no-repeat center center #fff;
 }
+
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
@@ -2325,4 +2330,13 @@ button.navbar-toggle.collapsed {
   border: none;
   outline: none;
   background: none !important;
+}
+/* Notification after form submission */
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
 }
