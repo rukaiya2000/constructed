@@ -230,3 +230,41 @@ $(".btn").click(function () {
   $(".btn").removeClass("on");
   $(this).toggleClass("on");
 });
+
+/* ==============================================
+     COUNTER
+     =============================================== */
+
+// Function to get the text values
+function getTextVal(span_id) {
+  return document.getElementById(span_id).innerText;
+}
+
+// Selecting Text Values
+var count1 = getTextVal("increase_count1");
+var count2 = getTextVal("increase_count2");
+var count3 = getTextVal("increase_count3");
+
+// Increamenting Count
+function counter() {
+  count1++;
+  var element1 = document.getElementById("increase_count1");
+  element1.innerHTML = +count1;
+
+  count2++;
+  var element2 = document.getElementById("increase_count2");
+  element2.innerHTML = +count2;
+
+  count3++;
+  var element3 = document.getElementById("increase_count3");
+  element3.innerHTML = +count3;
+}
+
+function begin() {
+  counter();
+  setTimeout(begin, 500, window);
+}
+// Counter Event handler
+document.addEventListener("DOMContentLoaded", function () {
+  begin();
+});
