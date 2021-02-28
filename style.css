@@ -2223,7 +2223,7 @@ section .section-title {
 .clientrotate {
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
+  padding: 20px;
   transform: rotate(0deg);
   transition: 1500ms;
 }
